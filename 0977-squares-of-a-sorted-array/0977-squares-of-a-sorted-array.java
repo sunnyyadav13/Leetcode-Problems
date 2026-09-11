@@ -13,7 +13,7 @@ class Solution {
             int leftSq = nums[i]*nums[i];
             int rightSq = nums[j]*nums[j];
 
-            if(rightSq>leftSq){
+            if(Math.abs(nums[j])>Math.abs(nums[i])){
                 res[k]= rightSq;
                 j--;
             }
